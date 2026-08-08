@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurum Imobiliária | Imóveis selecionados em Poços de Caldas</title>
+<meta name="description" content="Imobiliária com 15 anos de mercado. Assessoria completa na compra, venda e locação de imóveis. Corretores certificados, apoio jurídico e avaliação gratuita.">
+<meta name="theme-color" content="#0B1420">
+<meta property="og:title" content="Aurum Imobiliária | Imóveis selecionados em Poços de Caldas">
+<meta property="og:description" content="Corretores certificados, assessoria jurídica completa e avaliação gratuita do seu imóvel.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B1420'/><path d='M9 22V14l7-5 7 5v8h-5v-6h-4v6z' fill='%23C9A46B'/></svg>">
+
+<!-- Fonts: non-blocking (display=swap) with full system fallbacks in the CSS stack -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!--
+  =========================================================================
+  CONFIGURAÇÃO RÁPIDA — edit before publishing
+  -------------------------------------------------------------------------
+  1. WhatsApp: change WHATSAPP_NUMBER in the <script> at the bottom.
+     The same number is hardcoded in every href as a no-JS fallback —
+     Find & Replace "5535999999999" updates both at once.
+  2. Agency name, CRECI, address, hours, stats: search for [EDIT]
+  3. Photos live in fotos/ (Pexels, free for commercial use, no attribution
+     required). To use the agency's own photos, overwrite the files keeping
+     the same names — listings are 900x620, hero 800x1000, clients 160x160.
+  4. Google Maps: see the comment inside the "Regiões atendidas" section.
+  =========================================================================
+-->
+
+<style>
+/* ═══════════════════════════ DESIGN TOKENS ═══════════════════════════ */
+:root{
+  /* surface */
+  --ink-900:#080F19;
+  --ink-800:#0B1420;
+  --ink-700:#122033;
+  --ink-600:#1B2E47;
+  --ink-500:#2A4260;
+
+  /* text */
+  --text-900:#0F1723;
+  --text-700:#39465A;
+  --text-500:#6B7789;
+  --text-400:#8D97A7;
+
+  /* neutrals */
+  --line:#E7E4DE;
+  --line-soft:#F1EFEA;
+  --paper:#FCFBF9;
+  --paper-2:#F6F3EE;
+  --white:#FFFFFF;
+
+  /* accent */
+  --gold:#C9A46B;
+  --gold-light:#E0C795;
+  --gold-deep:#A07E43;
+  --gold-wash:#F5EDE0;
+
+  --wa:#25D366;
+  --wa-deep:#1BB055;
+
+  /* type */
+  --serif:"Fraunces","Playfair Display","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+  /* elevation — layered, low-opacity */
+  --e1:0 1px 2px rgba(11,20,32,.05), 0 2px 8px rgba(11,20,32,.04);
+  --e2:0 2px 4px rgba(11,20,32,.05), 0 12px 28px rgba(11,20,32,.08);
+  --e3:0 4px 8px rgba(11,20,32,.06), 0 24px 56px rgba(11,20,32,.12);
+  --e4:0 8px 16px rgba(11,20,32,.08), 0 40px 90px rgba(11,20,32,.18);
+
+  --r-sm:10px; --r-md:16px; --r-lg:22px; --r-xl:28px;
+  --nav-h:76px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+}
+
+/* ═══════════════════════════ RESET / BASE ═══════════════════════════ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+  color:var(--text-700);
+  background:var(--white);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+  font-feature-settings:"kern" 1,"liga" 1;
+}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+h1,h2,h3,h4{
+  font-family:var(--serif);
+  color:var(--text-900);
+  font-weight:500;
+  line-height:1.1;
+  letter-spacing:-.02em;
+  margin:0 0 .5em;
+  font-variation-settings:"opsz" 60;
+}
+h1{font-size:clamp(2.4rem,6.4vw,4.4rem);line-height:1.04;letter-spacing:-.032em}
+h2{font-size:clamp(1.95rem,4.6vw,3.1rem);letter-spacing:-.026em}
+h3{font-size:clamp(1.12rem,2.1vw,1.32rem);letter-spacing:-.012em}
+p{margin:0 0 1em}
+
+.svg-sprite{position:absolute;width:0;height:0;overflow:hidden}
+.icon{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.icon--solid{fill:currentColor;stroke:none}
+
+/* film grain for dark surfaces — adds depth without weight */
+.grain::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.16;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+
+/* ═══════════════════════════ LAYOUT ═══════════════════════════ */
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+@media (max-width:600px){.wrap{width:min(1200px,100% - 32px)}}
+section{scroll-margin-top:calc(var(--nav-h) + 12px)}
+.section{padding:clamp(72px,10vw,132px) 0}
+.section--paper{background:var(--paper-2)}
+.section--dark{background:var(--ink-800);color:#B7C2D1;position:relative;overflow:hidden}
+.section--dark h2,.section--dark h3{color:#fff}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold-deep);margin-bottom:20px;
+}
+.eyebrow::before{
+  content:attr(data-n);
+  font-family:var(--serif);font-size:.95rem;font-weight:500;letter-spacing:0;
+  color:var(--gold);opacity:.75;
+}
+.eyebrow::after{content:"";width:30px;height:1px;background:currentColor;opacity:.4}
+.section--dark .eyebrow{color:var(--gold)}
+
+.head{max-width:700px;margin-bottom:clamp(42px,5.5vw,66px)}
+.head--center{margin-inline:auto;text-align:center}
+.head--center .eyebrow{justify-content:center}
+.head p{font-size:clamp(1rem,1.5vw,1.1rem);margin-bottom:0;color:var(--text-700);max-width:60ch}
+.head--center p{margin-inline:auto}
+.section--dark .head p{color:#9FADBF}
+
+/* ═══════════════════════════ BUTTONS ═══════════════════════════ */
+.btn{
+  position:relative;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:16px 30px;border-radius:100px;
+  font-size:.95rem;font-weight:600;letter-spacing:-.005em;line-height:1;
+  transition:transform .3s var(--ease-out),box-shadow .3s var(--ease-out),background-color .25s,color .25s,border-color .25s;
+  text-align:center;white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.99)}
+.btn--wa{background:var(--wa);color:#fff;box-shadow:0 4px 14px rgba(37,211,102,.28),0 1px 3px rgba(0,0,0,.08)}
+.btn--wa:hover{background:var(--wa-deep);box-shadow:0 10px 28px rgba(37,211,102,.38)}
+.btn--gold{background:var(--gold);color:var(--ink-800);box-shadow:0 4px 14px rgba(201,164,107,.3)}
+.btn--gold:hover{background:var(--gold-light);box-shadow:0 10px 28px rgba(201,164,107,.4)}
+.btn--dark{background:var(--ink-800);color:#fff;box-shadow:var(--e2)}
+.btn--dark:hover{background:var(--ink-600)}
+.btn--ghost{border:1px solid rgba(255,255,255,.28);color:#fff;backdrop-filter:blur(4px)}
+.btn--ghost:hover{border-color:var(--gold);color:var(--gold);background:rgba(201,164,107,.1)}
+.btn--outline{border:1px solid var(--line);color:var(--text-900);background:var(--white)}
+.btn--outline:hover{border-color:var(--ink-800);background:var(--ink-800);color:#fff}
+.btn--sm{padding:12px 20px;font-size:.85rem}
+.btn--lg{padding:20px 44px;font-size:1.05rem}
+.btn--block{width:100%}
+
+/* ═══════════════════════════ NAV ═══════════════════════════ */
+.nav{
+  position:fixed;inset:0 0 auto;z-index:90;height:var(--nav-h);
+  display:flex;align-items:center;
+  transition:background-color .4s var(--ease),box-shadow .4s var(--ease),height .4s var(--ease);
+}
+.nav.is-stuck{
+  background:rgba(11,20,32,.88);
+  backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);
+  box-shadow:inset 0 -1px 0 rgba(255,255,255,.08),0 8px 32px rgba(0,0,0,.22);
+  height:66px;
+}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%}
+.nav__progress{position:absolute;left:0;bottom:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold-deep),var(--gold-light));opacity:0;transition:opacity .4s}
+.nav.is-stuck .nav__progress{opacity:1}
+
+.logo{display:flex;align-items:center;gap:12px;color:#fff}
+.logo__mark{
+  width:40px;height:40px;border-radius:11px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,#E0C795,var(--gold) 45%,#8F6F3B);
+  color:var(--ink-800);box-shadow:0 2px 10px rgba(201,164,107,.35),inset 0 1px 0 rgba(255,255,255,.45);
+}
+.logo__mark svg{width:21px;height:21px}
+.logo__txt{display:flex;flex-direction:column;line-height:1}
+.logo__name{font-family:var(--serif);font-size:1.3rem;font-weight:500;letter-spacing:.06em}
+.logo__sub{font-size:.55rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-top:5px}
+
+.nav__links{display:flex;align-items:center;gap:32px;list-style:none;margin:0;padding:0}
+.nav__links a{
+  position:relative;display:block;padding:8px 0;
+  font-size:.885rem;font-weight:500;color:rgba(255,255,255,.72);
+  transition:color .25s;
+}
+.nav__links a::after{
+  content:"";position:absolute;left:50%;right:50%;bottom:2px;height:1.5px;
+  background:var(--gold);transition:left .32s var(--ease-out),right .32s var(--ease-out);
+}
+.nav__links a:hover,.nav__links a.is-active{color:#fff}
+.nav__links a:hover::after,.nav__links a.is-active::after{left:0;right:0}
+
+.nav__cta{display:flex;align-items:center;gap:16px}
+.nav__phone{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.75);font-size:.87rem;font-weight:500;transition:color .25s}
+.nav__phone:hover{color:var(--gold)}
+
+.burger{display:none;width:44px;height:44px;border-radius:11px;align-items:center;justify-content:center;color:#fff}
+.burger svg{width:24px;height:24px}
+
+.drawer{
+  position:fixed;inset:0;z-index:95;background:var(--ink-800);
+  padding:calc(var(--nav-h) + 24px) 26px 40px;
+  display:flex;flex-direction:column;overflow-y:auto;
+  transform:translateX(100%);transition:transform .42s var(--ease-out);
+}
+.drawer.is-open{transform:none}
+.drawer__close{position:absolute;top:18px;right:20px;width:44px;height:44px;display:grid;place-items:center;color:#fff;border-radius:11px}
+.drawer__close svg{width:26px;height:26px}
+.drawer ul{list-style:none;margin:0 0 auto;padding:0}
+.drawer ul a{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:19px 2px;font-family:var(--serif);font-size:1.55rem;font-weight:500;color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.drawer ul a span{font-family:var(--sans);font-size:.7rem;color:var(--gold);letter-spacing:.14em}
+.drawer__foot{margin-top:36px;display:grid;gap:12px}
+.drawer__foot .btn{width:100%}
+
+/* ═══════════════════════════ HERO ═══════════════════════════ */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  padding:calc(var(--nav-h) + clamp(56px,9vw,100px)) 0 clamp(76px,9vw,110px);
+  background:
+    radial-gradient(1000px 620px at 82% 2%,rgba(201,164,107,.22),transparent 60%),
+    radial-gradient(760px 560px at 4% 96%,rgba(42,66,96,.9),transparent 62%),
+    linear-gradient(168deg,#0B1420 0%,#122033 46%,#080F19 100%);
+}
+.hero__mesh{
+  position:absolute;inset:0;pointer-events:none;z-index:1;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:72px 72px;
+  mask-image:radial-gradient(76% 62% at 46% 38%,#000,transparent);
+  -webkit-mask-image:radial-gradient(76% 62% at 46% 38%,#000,transparent);
+}
+.hero .wrap{position:relative;z-index:3}
+.hero__grid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(40px,5vw,72px);align-items:center}
+.hero h1{color:#fff;margin-bottom:26px;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--gold-light);position:relative;white-space:nowrap}
+.hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:.02em;height:.075em;border-radius:3px;
+  background:linear-gradient(90deg,var(--gold),rgba(201,164,107,.12));
+}
+.hero__sub{font-size:clamp(1.03rem,1.6vw,1.18rem);color:#A9B7C8;max-width:53ch;margin-bottom:36px;line-height:1.72}
+.hero__actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+
+.hero__proof{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.stack{display:flex}
+.stack span{
+  width:38px;height:38px;border-radius:50%;margin-left:-11px;
+  display:grid;place-items:center;font-size:.76rem;font-weight:600;color:var(--ink-800);
+  background:linear-gradient(145deg,var(--gold-wash),#D9C7A4);
+  border:2px solid var(--ink-800);box-shadow:0 2px 8px rgba(0,0,0,.3);
+}
+.stack span:first-child{margin-left:0}
+.hero__proof-txt{font-size:.86rem;color:#93A2B5;line-height:1.4}
+.hero__proof-txt b{display:flex;align-items:center;gap:5px;color:#fff;font-weight:600;font-size:.9rem}
+.hero__proof-txt b svg{width:15px;height:15px;fill:var(--gold);stroke:none}
+
+/* hero visual */
+.hero__visual{position:relative}
+.frame{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;
+  box-shadow:0 40px 90px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.1);
+}
+.frame__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero__badge{
+  position:absolute;left:-26px;bottom:38px;z-index:4;max-width:280px;
+  background:rgba(255,255,255,.97);backdrop-filter:blur(10px);
+  color:var(--text-900);border-radius:var(--r-md);padding:18px 22px;
+  box-shadow:var(--e4);display:flex;align-items:center;gap:15px;
+}
+.hero__badge svg{width:34px;height:34px;color:var(--gold-deep);flex:none}
+.hero__badge b{display:block;font-family:var(--serif);font-size:1.05rem;font-weight:500;line-height:1.2}
+.hero__badge span{display:block;font-size:.78rem;color:var(--text-500);line-height:1.4;margin-top:4px}
+
+@media (max-width:960px){
+  .hero__grid{grid-template-columns:1fr;gap:52px}
+  .hero__visual{max-width:460px;margin-inline:auto;width:100%}
+  .hero__badge{left:14px;bottom:-16px}
+}
+@media (max-width:600px){
+  .hero__actions .btn{width:100%}
+  .frame{aspect-ratio:5/4}
+  .hero__badge{position:static;margin-top:22px;max-width:none}
+}
+
+/* ═══════════════════════════ TRUST BAR ═══════════════════════════ */
+.trust{position:relative;background:var(--ink-700);padding:38px 0;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.trust__grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.trust__item{position:relative;padding:6px 14px}
+.trust__item+.trust__item::before{content:"";position:absolute;left:0;top:14%;height:72%;width:1px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.14),transparent)}
+.trust__num{
+  font-family:var(--serif);font-size:clamp(1.75rem,3.6vw,2.4rem);font-weight:500;
+  color:var(--gold-light);line-height:1;letter-spacing:-.02em;
+  display:flex;align-items:center;justify-content:center;gap:7px;
+}
+.trust__num svg{width:22px;height:22px;fill:var(--gold);stroke:none}
+.trust__lbl{font-size:.79rem;color:#93A2B5;margin-top:11px;letter-spacing:.01em}
+@media (max-width:760px){
+  .trust__grid{grid-template-columns:repeat(2,1fr);gap:30px 8px}
+  .trust__item:nth-child(3)::before{display:none}
+}
+
+/* ═══════════════════════════ SEARCH ═══════════════════════════ */
+.search{position:relative;z-index:20;margin-top:-52px}
+.search__card{
+  background:var(--white);border-radius:var(--r-lg);box-shadow:var(--e3);
+  padding:30px;border:1px solid var(--line-soft);
+}
+.search__title{
+  display:flex;align-items:center;gap:11px;margin-bottom:20px;
+  font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-800);
+}
+.search__title svg{width:18px;height:18px;color:var(--gold-deep)}
+.search__row{display:grid;grid-template-columns:repeat(3,1fr) auto;gap:16px;align-items:end}
+.field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.field label{font-size:.75rem;font-weight:600;color:var(--text-500);letter-spacing:.04em;text-transform:uppercase}
+.field select{
+  appearance:none;-webkit-appearance:none;width:100%;
+  padding:15px 42px 15px 16px;
+  border:1px solid var(--line);border-radius:12px;background-color:var(--paper);
+  font-family:inherit;font-size:.94rem;font-weight:500;color:var(--text-900);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7789' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;background-size:17px;
+  transition:border-color .22s,box-shadow .22s,background-color .22s;
+}
+.field select:hover{border-color:#CFC9BE}
+.field select:focus{outline:none;border-color:var(--gold);background-color:#fff;box-shadow:0 0 0 3px rgba(201,164,107,.16)}
+.search__row .btn{height:52px}
+@media (max-width:880px){
+  .search{margin-top:-34px}
+  .search__row{grid-template-columns:1fr 1fr}
+  .search__row .btn{grid-column:1/-1;width:100%}
+}
+@media (max-width:520px){
+  .search__card{padding:22px}
+  .search__row{grid-template-columns:1fr}
+}
+
+/* ═══════════════════════════ LISTINGS ═══════════════════════════ */
+.head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:clamp(38px,5vw,58px)}
+.head-row .head{margin-bottom:0}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+@media (max-width:1020px){.cards{grid-template-columns:repeat(2,1fr);gap:24px}}
+@media (max-width:660px){.cards{grid-template-columns:1fr}}
+
+.card{
+  background:var(--white);border-radius:var(--r-md);overflow:hidden;
+  border:1px solid var(--line-soft);box-shadow:var(--e1);
+  display:flex;flex-direction:column;
+  transition:transform .4s var(--ease-out),box-shadow .4s var(--ease-out),border-color .4s;
+}
+.card:hover{transform:translateY(-7px);box-shadow:var(--e3);border-color:#E2D9C8}
+.card__media{position:relative;aspect-ratio:16/11;overflow:hidden;background:var(--ink-800)}
+.card__media .photo{transition:transform .8s var(--ease-out)}
+.card:hover .card__media .photo{transform:scale(1.07)}
+.card__scrim{
+  position:absolute;inset:0;z-index:2;display:grid;place-items:center;
+  background:linear-gradient(0deg,rgba(8,15,25,.55),rgba(8,15,25,.25));
+  opacity:0;transition:opacity .35s var(--ease);
+}
+.card:hover .card__scrim{opacity:1}
+.card__scrim span{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 20px;border-radius:100px;background:rgba(255,255,255,.96);
+  color:var(--ink-800);font-size:.83rem;font-weight:600;
+  transform:translateY(8px);transition:transform .35s var(--ease-out);
+}
+.card:hover .card__scrim span{transform:none}
+.card__scrim svg{width:15px;height:15px}
+
+.card__tag{
+  position:absolute;top:15px;left:15px;z-index:3;
+  background:rgba(255,255,255,.96);color:var(--ink-800);
+  font-size:.665rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
+  padding:7px 13px;border-radius:100px;box-shadow:0 2px 10px rgba(0,0,0,.18);
+}
+.card__tag--gold{background:var(--gold);color:var(--ink-800)}
+.card__type{
+  position:absolute;top:15px;right:15px;z-index:3;
+  background:rgba(11,20,32,.62);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.14);
+  color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.05em;padding:7px 13px;border-radius:100px;
+}
+.card__body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.card__meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.card__loc{display:flex;align-items:center;gap:6px;font-size:.81rem;color:var(--text-500)}
+.card__loc svg{width:15px;height:15px;color:var(--gold-deep)}
+.card__ref{font-size:.68rem;letter-spacing:.1em;color:var(--text-400);font-weight:600}
+.card__title{font-size:1.14rem;margin-bottom:14px;color:var(--text-900);line-height:1.28;text-wrap:balance}
+.card__price{font-family:var(--serif);font-size:1.62rem;font-weight:500;color:var(--ink-800);letter-spacing:-.025em;margin-bottom:18px}
+.card__specs{
+  display:flex;flex-wrap:wrap;gap:9px 20px;padding:15px 0 19px;margin-bottom:20px;
+  border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+}
+.spec{display:flex;align-items:center;gap:7px;font-size:.84rem;color:var(--text-700);font-weight:500}
+.spec svg{width:17px;height:17px;color:var(--gold-deep)}
+.card__actions{display:grid;grid-template-columns:1fr 1.3fr;gap:10px;margin-top:auto}
+@media (max-width:400px){.card__actions{grid-template-columns:1fr}}
+
+.listings__foot{margin-top:52px;text-align:center}
+.listings__foot p{color:var(--text-500);font-size:.95rem;margin-bottom:18px}
+
+/* property photos — the gradient overlay lives on the parent so the <img> stays clean */
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card__media::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,transparent 46%,rgba(8,15,25,.42));
+}
+.sell__panel::after{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(158deg,rgba(8,15,25,.2),rgba(8,15,25,.58));
+}
+
+/* ═══════════════════════════ DIFFERENTIATORS ═══════════════════════════ */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+@media (max-width:960px){.feats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:580px){.feats{grid-template-columns:1fr;gap:16px}}
+.feat{
+  position:relative;background:var(--white);border:1px solid var(--line-soft);
+  border-radius:var(--r-md);padding:34px 28px;
+  transition:transform .38s var(--ease-out),box-shadow .38s var(--ease-out),border-color .38s;
+}
+.feat::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:2px;border-radius:var(--r-md) var(--r-md) 0 0;
+  background:linear-gradient(90deg,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease-out);
+}
+.feat:hover{transform:translateY(-6px);box-shadow:var(--e2);border-color:#E9E0CF}
+.feat:hover::before{transform:scaleX(1)}
+.feat__ico{
+  width:56px;height:56px;border-radius:15px;display:grid;place-items:center;margin-bottom:22px;
+  background:linear-gradient(148deg,var(--gold-wash),#FEFCF8);color:var(--gold-deep);
+  border:1px solid rgba(201,164,107,.26);box-shadow:inset 0 1px 0 rgba(255,255,255,.9);
+}
+.feat__ico svg{width:25px;height:25px;stroke-width:1.5}
+.feat h3{font-size:1.1rem;margin-bottom:10px}
+.feat p{font-size:.92rem;margin-bottom:0;color:var(--text-700);line-height:1.66}
+
+/* ═══════════════════════════ PROCESS ═══════════════════════════ */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;position:relative}
+.steps::before{
+  content:"";position:absolute;top:33px;left:12%;right:12%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(201,164,107,.5) 20%,rgba(201,164,107,.5) 80%,transparent);
+}
+.step{position:relative;text-align:center;padding:0 8px}
+.step__num{
+  position:relative;z-index:2;width:66px;height:66px;margin:0 auto 22px;border-radius:50%;
+  display:grid;place-items:center;color:var(--gold);
+  background:var(--ink-700);border:1px solid rgba(201,164,107,.4);
+  box-shadow:0 0 0 9px var(--ink-800),0 6px 20px rgba(0,0,0,.35);
+  transition:transform .4s var(--ease-out),background-color .4s,color .4s;
+}
+.step:hover .step__num{transform:translateY(-4px);background:var(--gold);color:var(--ink-800)}
+.step__num svg{width:26px;height:26px;stroke-width:1.5}
+.step__k{
+  position:absolute;top:-3px;right:-3px;width:25px;height:25px;border-radius:50%;
+  background:var(--gold);color:var(--ink-800);font-family:var(--sans);
+  font-size:.72rem;font-weight:700;display:grid;place-items:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.3);
+}
+.step h3{font-size:1.08rem;margin-bottom:9px}
+.step p{font-size:.89rem;color:#9FADBF;margin-bottom:0;line-height:1.6}
+@media (max-width:880px){
+  .steps{grid-template-columns:repeat(2,1fr);gap:40px 20px}
+  .steps::before{display:none}
+}
+@media (max-width:470px){.steps{grid-template-columns:1fr}}
+
+/* ═══════════════════════════ TESTIMONIALS ═══════════════════════════ */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+@media (max-width:960px){.quotes{grid-template-columns:1fr;max-width:660px;margin-inline:auto}}
+.quote{
+  position:relative;background:var(--white);border:1px solid var(--line-soft);
+  border-radius:var(--r-md);padding:36px 30px 30px;display:flex;flex-direction:column;
+  box-shadow:var(--e1);transition:transform .38s var(--ease-out),box-shadow .38s var(--ease-out);
+}
+.quote:hover{transform:translateY(-5px);box-shadow:var(--e2)}
+.quote::before{
+  content:"”";position:absolute;top:6px;right:24px;
+  font-family:var(--serif);font-size:6rem;line-height:1;color:var(--gold);opacity:.16;pointer-events:none;
+}
+.stars{display:flex;gap:3px;margin-bottom:18px;color:var(--gold)}
+.stars svg{width:16px;height:16px;fill:currentColor;stroke:none}
+.quote__txt{font-size:.97rem;color:var(--text-900);line-height:1.75;margin-bottom:26px;flex:1}
+.quote__who{display:flex;align-items:center;gap:15px;padding-top:22px;border-top:1px solid var(--line-soft)}
+.avatar{
+  width:52px;height:52px;border-radius:50%;flex:none;object-fit:cover;
+  background:linear-gradient(148deg,var(--gold-wash),#E4D6BB);
+  border:1px solid rgba(201,164,107,.35);
+}
+.quote__who b{display:block;font-size:.94rem;color:var(--text-900);font-weight:600;line-height:1.3}
+.quote__who span{display:block;font-size:.79rem;color:var(--text-500);margin-top:3px}
+
+/* ═══════════════════════════ SELL CTA ═══════════════════════════ */
+.sell{
+  position:relative;overflow:hidden;border-radius:var(--r-xl);box-shadow:var(--e4);
+  display:grid;grid-template-columns:1.08fr .92fr;align-items:center;
+  background:linear-gradient(152deg,#122033 0%,#0B1420 58%,#080F19 100%);
+}
+.sell::after{
+  content:"";position:absolute;width:560px;height:560px;right:-160px;top:-210px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,164,107,.26),transparent 68%);pointer-events:none;z-index:1;
+}
+.sell__txt{padding:clamp(40px,5.2vw,68px);position:relative;z-index:3}
+.sell__txt h2{color:#fff}
+.sell__txt>p{color:#A9B7C8;font-size:1.02rem;line-height:1.72}
+.sell__list{list-style:none;padding:0;margin:0 0 34px;display:grid;gap:13px}
+.sell__list li{display:flex;align-items:flex-start;gap:12px;font-size:.93rem;color:#BCC7D6}
+.sell__list svg{width:20px;height:20px;color:var(--gold);flex:none;margin-top:2px}
+.sell__actions{display:flex;flex-wrap:wrap;gap:13px}
+.sell__panel{position:relative;align-self:stretch;min-height:380px}
+.sell__stamp{
+  position:absolute;z-index:4;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:min(230px,78%);text-align:center;background:rgba(255,255,255,.97);
+  border-radius:var(--r-md);padding:26px;box-shadow:var(--e4);
+}
+.sell__stamp b{display:block;font-family:var(--serif);font-size:2rem;font-weight:500;color:var(--ink-800);line-height:1;letter-spacing:-.02em}
+.sell__stamp span{display:block;font-size:.79rem;color:var(--text-500);margin-top:10px;line-height:1.45}
+@media (max-width:920px){
+  .sell{grid-template-columns:1fr}
+  .sell__panel{min-height:240px;order:-1}
+  .sell__actions .btn{flex:1 1 220px}
+}
+
+/* ═══════════════════════════ MAP / AREAS ═══════════════════════════ */
+.areas{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(36px,5vw,64px);align-items:center}
+@media (max-width:920px){.areas{grid-template-columns:1fr}}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 32px}
+.pill{
+  display:inline-flex;align-items:center;gap:7px;padding:10px 17px;border-radius:100px;
+  border:1px solid var(--line);background:var(--white);
+  font-size:.86rem;font-weight:500;color:var(--text-900);
+  transition:border-color .28s,background-color .28s,transform .28s var(--ease-out);
+}
+.pill svg{width:14px;height:14px;color:var(--gold-deep)}
+.pill:hover{border-color:var(--gold);background:var(--gold-wash);transform:translateY(-2px)}
+.map{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;
+  border:1px solid var(--line);box-shadow:var(--e2);background:#E8EDF2;
+}
+.map>svg{position:absolute;inset:0;width:100%;height:100%}
+.map__chip{
+  position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;
+  display:flex;align-items:center;gap:9px;white-space:nowrap;
+  background:rgba(255,255,255,.97);backdrop-filter:blur(8px);
+  border-radius:100px;padding:12px 22px;box-shadow:var(--e2);
+  font-size:.85rem;font-weight:600;color:var(--text-900);
+}
+.map__chip svg{width:17px;height:17px;color:var(--gold-deep)}
+.map__pin{animation:pulse 2.8s ease-in-out infinite;transform-origin:center}
+@keyframes pulse{0%,100%{opacity:.8}50%{opacity:.25}}
+
+/* ═══════════════════════════ FAQ ═══════════════════════════ */
+.faq{max-width:840px;margin-inline:auto}
+.acc{border-bottom:1px solid var(--line)}
+.acc:first-child{border-top:1px solid var(--line)}
+.acc__q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:26px 4px;text-align:left;
+  font-family:var(--serif);font-size:clamp(1.04rem,2vw,1.2rem);font-weight:500;
+  color:var(--text-900);letter-spacing:-.012em;transition:color .22s;
+}
+.acc__q:hover{color:var(--gold-deep)}
+.acc__ico{
+  width:34px;height:34px;flex:none;border-radius:50%;border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--gold-deep);
+  transition:transform .38s var(--ease-out),background-color .3s,border-color .3s,color .3s;
+}
+.acc__ico svg{width:16px;height:16px;stroke-width:2}
+.acc__q[aria-expanded="true"]{color:var(--gold-deep)}
+.acc__q[aria-expanded="true"] .acc__ico{transform:rotate(180deg);background:var(--gold);border-color:var(--gold);color:var(--ink-800)}
+.acc__a{overflow:hidden;height:0;transition:height .38s var(--ease-out)}
+.acc__a>div{padding:0 58px 28px 4px;font-size:.96rem;color:var(--text-700);line-height:1.75}
+.acc__a p:last-child{margin-bottom:0}
+.faq__foot{text-align:center;margin-top:48px}
+.faq__foot p{color:var(--text-700);margin-bottom:20px}
+
+/* ═══════════════════════════ FINAL CTA ═══════════════════════════ */
+.final{
+  position:relative;overflow:hidden;text-align:center;color:#fff;
+  padding:clamp(80px,11vw,140px) 0;
+  background:
+    radial-gradient(900px 480px at 50% -12%,rgba(201,164,107,.26),transparent 64%),
+    linear-gradient(172deg,#122033,#080F19);
+}
+.final .wrap{position:relative;z-index:3}
+.final h2{font-size:clamp(2.15rem,5.8vw,3.7rem);color:#fff;max-width:17ch;margin-inline:auto;margin-bottom:22px;text-wrap:balance}
+.final h2 em{font-style:normal;color:var(--gold-light)}
+.final__sub{font-size:clamp(1rem,1.6vw,1.1rem);color:#A9B7C8;max-width:58ch;margin:0 auto 38px;line-height:1.72}
+.final__actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:52px}
+.final__info{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:18px 48px;
+  padding-top:40px;border-top:1px solid rgba(255,255,255,.11);max-width:900px;margin-inline:auto;
+}
+.final__info div{display:flex;align-items:flex-start;gap:12px;text-align:left;font-size:.9rem;color:#A9B7C8;line-height:1.6}
+.final__info svg{width:19px;height:19px;color:var(--gold);flex:none;margin-top:3px}
+.final__info b{display:block;color:#fff;font-weight:600;font-size:.88rem;margin-bottom:3px}
+@media (max-width:600px){.final__actions .btn{width:100%}}
+
+/* ═══════════════════════════ FOOTER ═══════════════════════════ */
+.footer{background:var(--ink-900);color:#7F8B9C;padding:70px 0 0;font-size:.92rem}
+.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:44px;padding-bottom:52px}
+@media (max-width:900px){.footer__grid{grid-template-columns:1fr 1fr;gap:38px 28px}}
+@media (max-width:540px){.footer__grid{grid-template-columns:1fr}}
+.footer h4{color:#fff;font-family:var(--sans);font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px}
+.footer p{font-size:.9rem;line-height:1.72}
+.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.footer ul a{font-size:.9rem;transition:color .22s}
+.footer ul a:hover{color:var(--gold)}
+.footer__creci{
+  display:inline-block;margin-top:18px;padding:8px 14px;border:1px solid rgba(255,255,255,.13);
+  border-radius:9px;font-size:.75rem;letter-spacing:.08em;color:#A9B7C8;
+}
+.footer__contact li{display:flex;align-items:flex-start;gap:11px;line-height:1.6}
+.footer__contact svg{width:17px;height:17px;color:var(--gold);flex:none;margin-top:3px}
+.socials{display:flex;gap:10px;margin-top:24px}
+.socials a{
+  width:42px;height:42px;border-radius:11px;display:grid;place-items:center;
+  border:1px solid rgba(255,255,255,.12);color:#A9B7C8;
+  transition:background-color .28s,color .28s,border-color .28s,transform .28s var(--ease-out);
+}
+.socials a:hover{background:var(--gold);color:var(--ink-800);border-color:var(--gold);transform:translateY(-3px)}
+.socials svg{width:19px;height:19px}
+.footer__bar{
+  border-top:1px solid rgba(255,255,255,.08);padding:26px 0 32px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  font-size:.81rem;color:#616D7E;
+}
+.footer__bar a:hover{color:var(--gold)}
+
+/* ═══════════════════════════ FLOATING WHATSAPP ═══════════════════════════ */
+.wa-float{
+  position:fixed;right:22px;bottom:22px;z-index:80;
+  display:flex;align-items:center;gap:11px;
+  background:var(--wa);color:#fff;border-radius:100px;
+  padding:14px 24px 14px 16px;font-weight:600;font-size:.93rem;
+  box-shadow:0 8px 26px rgba(37,211,102,.42),0 2px 8px rgba(0,0,0,.2);
+  opacity:0;visibility:hidden;transform:translateY(20px) scale(.92);
+  transition:opacity .4s var(--ease-out),transform .4s var(--ease-out),visibility .4s,background-color .25s;
+}
+.wa-float.is-visible{opacity:1;visibility:visible;transform:none}
+.wa-float:hover{background:var(--wa-deep)}
+.wa-float svg{width:29px;height:29px;fill:currentColor;stroke:none}
+.wa-float::after{
+  content:"";position:absolute;inset:0;border-radius:100px;
+  border:2px solid rgba(37,211,102,.6);animation:ring 2.8s var(--ease-out) infinite;pointer-events:none;
+}
+@keyframes ring{0%{transform:scale(1);opacity:.7}70%,100%{transform:scale(1.3);opacity:0}}
+@media (max-width:600px){
+  .wa-float{right:16px;bottom:16px;padding:15px;gap:0}
+  .wa-float span{display:none}
+}
+
+/* ═══════════════════════════ MODAL ═══════════════════════════ */
+.modal{
+  position:fixed;inset:0;z-index:120;display:grid;place-items:center;padding:20px;
+  background:rgba(8,15,25,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility .3s;
+}
+.modal.is-open{opacity:1;visibility:visible}
+.modal__box{
+  background:var(--white);border-radius:var(--r-lg);width:min(580px,100%);max-height:88vh;overflow-y:auto;
+  box-shadow:var(--e4);transform:translateY(20px) scale(.97);transition:transform .36s var(--ease-out);
+}
+.modal.is-open .modal__box{transform:none}
+.modal__media{position:relative;aspect-ratio:16/9}
+.modal__close{
+  position:absolute;top:15px;right:15px;z-index:4;width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.95);color:var(--ink-800);display:grid;place-items:center;box-shadow:var(--e1);
+  transition:background-color .22s,transform .22s var(--ease-out);
+}
+.modal__close:hover{background:#fff;transform:rotate(90deg)}
+.modal__close svg{width:20px;height:20px;stroke-width:2}
+.modal__body{padding:30px}
+.modal__ref{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-400);font-weight:600}
+.modal__body h3{font-size:1.42rem;margin:10px 0 8px;line-height:1.25}
+.modal__price{font-family:var(--serif);font-size:1.85rem;font-weight:500;color:var(--ink-800);letter-spacing:-.025em;margin:16px 0 20px}
+.modal__specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:12px;margin-bottom:22px}
+.modal__specs div{background:var(--paper-2);border:1px solid var(--line-soft);border-radius:12px;padding:13px 15px}
+.modal__specs b{display:block;font-family:var(--serif);font-size:1.02rem;font-weight:500;color:var(--text-900)}
+.modal__specs span{font-size:.75rem;color:var(--text-500)}
+.modal__body>p{font-size:.94rem;line-height:1.72;margin-bottom:24px}
+
+/* ═══════════════════════════ SCROLL REVEAL ═══════════════════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+.reveal.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ═══════════════════════════ NAV BREAKPOINTS ═══════════════════════════ */
+@media (max-width:1080px){
+  .nav__links,.nav__phone{display:none}
+  .burger{display:flex}
+}
+@media (max-width:1240px) and (min-width:1081px){
+  .nav__links{gap:22px}
+  .nav__phone{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ ICON SPRITE ══════════════ -->
+<svg class="svg-sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18v-7h18v7M3 18v2M21 18v2M3 11V7a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v4M14 11V7a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v4"/></symbol>
+  <symbol id="i-bath" viewBox="0 0 24 24"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V6a2 2 0 0 1 2-2 2 2 0 0 1 2 2M7 19l-1 2M17 19l1 2"/></symbol>
+  <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4M9 9h6v6H9z"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17H3v-4l2-5h14l2 5v4h-2M5 17a2 2 0 1 0 4 0M15 17a2 2 0 1 0 4 0M9 17h6M5 13h14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.4 7 21l5-2.4L17 21l-1.5-7.6"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v17M7 21h10M4 8l4-2 4 2 4-2 4 2M6 8l-2.5 5.5a2.8 2.8 0 0 0 5 0zM18 8l-2.5 5.5a2.8 2.8 0 0 0 5 0z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 12a7.5 7.5 0 0 1-11 6.6L4 20l1.4-4.7A7.5 7.5 0 1 1 20 12z"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.5"/><path d="m11.3 11.3 8 8M17.5 17.5l2-2M15 15l1.8-1.8"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M14 3v4h4M9 12h6M9 16h4"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21 16.5v2.6a1.7 1.7 0 0 1-1.9 1.7 17 17 0 0 1-7.4-2.6 16.7 16.7 0 0 1-5.1-5.1A17 17 0 0 1 4 5.6 1.7 1.7 0 0 1 5.7 3.7h2.6a1.7 1.7 0 0 1 1.7 1.5c.1.9.3 1.7.6 2.5a1.7 1.7 0 0 1-.4 1.8l-1.1 1.1a13.6 13.6 0 0 0 5.1 5.1l1.1-1.1a1.7 1.7 0 0 1 1.8-.4c.8.3 1.6.5 2.5.6a1.7 1.7 0 0 1 1.4 1.7z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 16 5.5-5.5 3.5 3.5L21 5"/><path d="M15 5h6v6"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.85 9.85 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 0 16.48z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14.5 8.5H17V5h-2.5C12.6 5 11 6.6 11 8.5V11H8.5v3.5H11V21h3.5v-6.5H17l.5-3.5h-3V9a.5.5 0 0 1 .5-.5z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.2 9.5 4.8 2.5-4.8 2.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></symbol>
+</svg>
+
+<!-- ══════════════ NAV ══════════════ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#topo" class="logo" aria-label="Aurum Imobiliária — início">
+      <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-home"/></svg></span>
+      <span class="logo__txt">
+        <!-- [EDIT] agency name -->
+        <span class="logo__name">AURUM</span>
+        <span class="logo__sub">Imobiliária</span>
+      </span>
+    </a>
+
+    <nav aria-label="Menu principal">
+      <ul class="nav__links">
+        <li><a href="#imoveis">Imóveis</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#processo">Como funciona</a></li>
+        <li><a href="#vender">Vender ou alugar</a></li>
+        <li><a href="#regioes">Regiões</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__cta">
+      <!-- [EDIT] phone -->
+      <a class="nav__phone" href="tel:+5535999999999"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>(35) 99999-9999</a>
+      <a class="btn btn--gold btn--sm" href="https://wa.me/5535999999999" data-wa
+         data-wa-msg="Olá! Vim pelo site da Aurum e gostaria de falar com um corretor sobre imóveis.">
+        Falar com um Corretor
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress" id="navProgress"></div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <button class="drawer__close" id="drawerClose" aria-label="Fechar menu"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <ul>
+    <li><a href="#imoveis">Imóveis <span>01</span></a></li>
+    <li><a href="#diferenciais">Diferenciais <span>02</span></a></li>
+    <li><a href="#processo">Como funciona <span>03</span></a></li>
+    <li><a href="#depoimentos">Depoimentos <span>04</span></a></li>
+    <li><a href="#vender">Vender ou alugar <span>05</span></a></li>
+    <li><a href="#regioes">Regiões <span>06</span></a></li>
+    <li><a href="#faq">Dúvidas <span>07</span></a></li>
+  </ul>
+  <div class="drawer__foot">
+    <a class="btn btn--wa" href="https://wa.me/5535999999999" data-wa
+       data-wa-msg="Olá! Vim pelo site da Aurum e gostaria de falar com um corretor.">
+      <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Falar no WhatsApp
+    </a>
+    <a class="btn btn--ghost" href="tel:+5535999999999"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> (35) 99999-9999</a>
+  </div>
+</div>
+
+<main id="topo">
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero grain">
+  <div class="hero__mesh"></div>
+  <div class="wrap">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow" data-n="—">Poços de Caldas e região · Desde 2010</span>
+        <h1>O imóvel certo existe. O difícil é <em>chegar até ele sozinho</em>.</h1>
+        <p class="hero__sub">
+          Selecionamos, avaliamos e negociamos imóveis com quem conhece cada rua da cidade.
+          Você recebe apenas as oportunidades que fazem sentido para o seu orçamento — com
+          documentação conferida e apoio jurídico do primeiro contato até a assinatura.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--wa btn--lg" href="https://wa.me/5535999999999" data-wa
+             data-wa-msg="Olá! Vim pelo site da Aurum e gostaria de falar com um corretor sobre as opções disponíveis.">
+            <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Falar com um Corretor
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#imoveis">
+            Ver imóveis <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+          </a>
+        </div>
+
+        <div class="hero__proof">
+          <div class="stack" aria-hidden="true">
+            <span>MR</span><span>CP</span><span>JA</span><span>+</span>
+          </div>
+          <div class="hero__proof-txt">
+            <b>4,9 <svg aria-hidden="true"><use href="#i-star"/></svg> no Google</b>
+            +300 famílias atendidas · Resposta em até 10 minutos
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="frame">
+          <img class="frame__img" src="fotos/hero.jpg" width="800" height="1000" decoding="async" fetchpriority="high"
+               alt="Edifício residencial de alto padrão com varandas, visto de baixo contra o céu azul">
+        </div>
+
+        <div class="hero__badge">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-trend"/></svg>
+          <div>
+            <b>Avaliação gratuita</b>
+            <span>Saiba hoje quanto vale o seu imóvel no mercado atual.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TRUST BAR ══════════════ -->
+<section class="trust grain" aria-label="Nossos números">
+  <div class="wrap">
+    <div class="trust__grid">
+      <!-- [EDIT] placeholder numbers -->
+      <div class="trust__item">
+        <div class="trust__num"><span data-count="300" data-prefix="+">+300</span></div>
+        <div class="trust__lbl">Imóveis vendidos</div>
+      </div>
+      <div class="trust__item">
+        <div class="trust__num"><span data-count="15">15</span></div>
+        <div class="trust__lbl">Anos no mercado local</div>
+      </div>
+      <div class="trust__item">
+        <div class="trust__num">4,9 <svg aria-hidden="true"><use href="#i-star"/></svg></div>
+        <div class="trust__lbl">Avaliação no Google</div>
+      </div>
+      <div class="trust__item">
+        <div class="trust__num"><span data-count="98" data-suffix="%">98%</span></div>
+        <div class="trust__lbl">Dos clientes nos indicam</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SEARCH ══════════════ -->
+<div class="search">
+  <div class="wrap">
+    <form class="search__card reveal" id="searchForm">
+      <div class="search__title">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        Encontre seu imóvel
+      </div>
+      <div class="search__row">
+        <div class="field">
+          <label for="f-tipo">Tipo de imóvel</label>
+          <select id="f-tipo" name="tipo">
+            <option>Todos os tipos</option>
+            <option>Apartamento</option>
+            <option>Casa</option>
+            <option>Casa em condomínio</option>
+            <option>Cobertura</option>
+            <option>Terreno</option>
+            <option>Sala comercial</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-bairro">Bairro / região</label>
+          <select id="f-bairro" name="bairro">
+            <option>Todos os bairros</option>
+            <option>Centro</option>
+            <option>Jardim dos Estados</option>
+            <option>Country Club</option>
+            <option>Vila Togni</option>
+            <option>Jardim Philadélphia</option>
+            <option>Santa Ângela</option>
+            <option>Jardim Kennedy</option>
+            <option>São Bento</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-preco">Faixa de preço</label>
+          <select id="f-preco" name="preco">
+            <option>Qualquer valor</option>
+            <option>Até R$ 400 mil</option>
+            <option>R$ 400 mil a R$ 700 mil</option>
+            <option>R$ 700 mil a R$ 1 milhão</option>
+            <option>R$ 1 mi a R$ 2 mi</option>
+            <option>Acima de R$ 2 milhões</option>
+          </select>
+        </div>
+        <button class="btn btn--dark" type="submit">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg> Buscar imóveis
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════ LISTINGS ══════════════ -->
+<section class="section" id="imoveis">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div class="head">
+        <span class="eyebrow" data-n="01">Portfólio selecionado</span>
+        <h2>Imóveis em destaque nesta semana</h2>
+        <p>Cada imóvel abaixo passou por vistoria e checagem de documentação antes de entrar na nossa carteira. Do primeiro apartamento ao alto padrão.</p>
+      </div>
+      <a class="btn btn--outline" href="https://wa.me/5535999999999" data-wa
+         data-wa-msg="Olá! Gostaria de ver a carteira completa de imóveis disponíveis da Aurum.">
+        Ver carteira completa <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+      </a>
+    </div>
+
+    <div class="cards">
+
+      <!-- CARD 1 -->
+      <article class="card reveal">
+        <div class="card__media">
+          <!-- [EDIT] to use your own photo, just replace the file in fotos/ keeping the name -->
+          <img class="photo" src="fotos/ap-1042.jpg" width="900" height="620" loading="lazy" decoding="async" alt="Fachada de edifício residencial em travertino, com varandas envidraçadas">
+          <span class="card__tag card__tag--gold">Exclusivo</span>
+          <span class="card__type">Apartamento</span>
+          <div class="card__scrim"><span><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> Ver detalhes</span></div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="card__loc"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg> Jardim dos Estados</span>
+            <span class="card__ref">AP-1042</span>
+          </div>
+          <h3 class="card__title">Apartamento com varanda e vista para o parque</h3>
+          <div class="card__price">R$ 890.000</div>
+          <div class="card__specs">
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bed"/></svg> 3 quartos</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bath"/></svg> 2 banheiros</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-area"/></svg> 112 m²</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-car"/></svg> 2 vagas</span>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--outline btn--sm" type="button" data-detail
+              data-ref="AP-1042" data-img="fotos/ap-1042.jpg" data-title="Apartamento com varanda e vista para o parque"
+              data-loc="Jardim dos Estados" data-price="R$ 890.000" data-type="Apartamento"
+              data-specs="3 quartos (1 suíte)|2 banheiros|112 m² úteis|2 vagas cobertas"
+              data-desc="Andar alto em edifício de 2018, com varanda gourmet integrada à sala, cozinha planejada e suíte com closet. Condomínio com portaria 24h, salão de festas e academia. Documentação regularizada e apta a financiamento bancário.">
+              Ver Detalhes
+            </button>
+            <a class="btn btn--wa btn--sm" href="https://wa.me/5535999999999" data-wa
+               data-wa-msg="Olá! Tenho interesse no imóvel REF AP-1042 — Apartamento no Jardim dos Estados (R$ 890.000). Podemos agendar uma visita?">
+              <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tenho Interesse
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card reveal">
+        <div class="card__media">
+          <img class="photo" src="fotos/ca-2088.jpg" width="900" height="620" loading="lazy" decoding="async" alt="Casa térrea moderna com piscina e deck de madeira ao lado do jardim">
+          <span class="card__tag">Novo na carteira</span>
+          <span class="card__type">Casa</span>
+          <div class="card__scrim"><span><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> Ver detalhes</span></div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="card__loc"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg> Country Club</span>
+            <span class="card__ref">CA-2088</span>
+          </div>
+          <h3 class="card__title">Casa térrea com área gourmet e piscina</h3>
+          <div class="card__price">R$ 1.450.000</div>
+          <div class="card__specs">
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bed"/></svg> 4 quartos</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bath"/></svg> 4 banheiros</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-area"/></svg> 320 m²</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-car"/></svg> 4 vagas</span>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--outline btn--sm" type="button" data-detail
+              data-ref="CA-2088" data-img="fotos/ca-2088.jpg" data-title="Casa térrea com área gourmet e piscina"
+              data-loc="Country Club" data-price="R$ 1.450.000" data-type="Casa"
+              data-specs="4 quartos (2 suítes)|4 banheiros|320 m² construídos|500 m² de terreno"
+              data-desc="Casa térrea em rua tranquila, com sala de estar e jantar integradas, cozinha americana, área gourmet com churrasqueira e piscina aquecida. Jardim maduro e espaço para horta. Imóvel quitado, com escritura e IPTU em dia.">
+              Ver Detalhes
+            </button>
+            <a class="btn btn--wa btn--sm" href="https://wa.me/5535999999999" data-wa
+               data-wa-msg="Olá! Tenho interesse no imóvel REF CA-2088 — Casa no Country Club (R$ 1.450.000). Podemos agendar uma visita?">
+              <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tenho Interesse
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card reveal">
+        <div class="card__media">
+          <img class="photo" src="fotos/co-3011.jpg" width="900" height="620" loading="lazy" decoding="async" alt="Terraço de cobertura com deck de madeira e vista panorâmica da cidade">
+          <span class="card__tag card__tag--gold">Alto padrão</span>
+          <span class="card__type">Cobertura</span>
+          <div class="card__scrim"><span><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> Ver detalhes</span></div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="card__loc"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg> Centro</span>
+            <span class="card__ref">CO-3011</span>
+          </div>
+          <h3 class="card__title">Cobertura duplex com terraço panorâmico</h3>
+          <div class="card__price">R$ 2.300.000</div>
+          <div class="card__specs">
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bed"/></svg> 4 suítes</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bath"/></svg> 5 banheiros</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-area"/></svg> 410 m²</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-car"/></svg> 4 vagas</span>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--outline btn--sm" type="button" data-detail
+              data-ref="CO-3011" data-img="fotos/co-3011.jpg" data-title="Cobertura duplex com terraço panorâmico"
+              data-loc="Centro" data-price="R$ 2.300.000" data-type="Cobertura"
+              data-specs="4 suítes|5 banheiros|410 m² privativos|4 vagas exclusivas"
+              data-desc="Cobertura duplex em um dos endereços mais valorizados da cidade. Terraço de 120 m² com piscina, spa e churrasqueira, sala de estar com pé-direito duplo e elevador privativo. Projeto de interiores assinado e mobiliário sob medida incluso na negociação.">
+              Ver Detalhes
+            </button>
+            <a class="btn btn--wa btn--sm" href="https://wa.me/5535999999999" data-wa
+               data-wa-msg="Olá! Tenho interesse no imóvel REF CO-3011 — Cobertura no Centro (R$ 2.300.000). Podemos conversar sobre uma visita?">
+              <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tenho Interesse
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="card reveal">
+        <div class="card__media">
+          <img class="photo" src="fotos/ap-1177.jpg" width="900" height="620" loading="lazy" decoding="async" alt="Sala de estar iluminada de apartamento com janelas amplas e varanda">
+          <span class="card__tag">Aceita financiamento</span>
+          <span class="card__type">Apartamento</span>
+          <div class="card__scrim"><span><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> Ver detalhes</span></div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="card__loc"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg> Vila Togni</span>
+            <span class="card__ref">AP-1177</span>
+          </div>
+          <h3 class="card__title">Apartamento pronto para morar, próximo ao comércio</h3>
+          <div class="card__price">R$ 445.000</div>
+          <div class="card__specs">
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bed"/></svg> 2 quartos</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bath"/></svg> 1 banheiro</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-area"/></svg> 68 m²</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-car"/></svg> 1 vaga</span>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--outline btn--sm" type="button" data-detail
+              data-ref="AP-1177" data-img="fotos/ap-1177.jpg" data-title="Apartamento pronto para morar, próximo ao comércio"
+              data-loc="Vila Togni" data-price="R$ 445.000" data-type="Apartamento"
+              data-specs="2 quartos|1 banheiro|68 m² úteis|1 vaga"
+              data-desc="Excelente opção de primeiro imóvel ou investimento para locação. Reformado em 2023, com piso porcelanato, armários planejados na cozinha e condomínio de baixo custo. A poucos minutos de escolas, farmácias e supermercado. Aceita FGTS e financiamento em até 35 anos.">
+              Ver Detalhes
+            </button>
+            <a class="btn btn--wa btn--sm" href="https://wa.me/5535999999999" data-wa
+               data-wa-msg="Olá! Tenho interesse no imóvel REF AP-1177 — Apartamento na Vila Togni (R$ 445.000). Gostaria de saber sobre financiamento.">
+              <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tenho Interesse
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 5 -->
+      <article class="card reveal">
+        <div class="card__media">
+          <img class="photo" src="fotos/te-4005.jpg" width="900" height="620" loading="lazy" decoding="async" alt="Terreno plano e limpo em loteamento, com casas e prédios ao fundo">
+          <span class="card__tag">Oportunidade</span>
+          <span class="card__type">Terreno</span>
+          <div class="card__scrim"><span><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> Ver detalhes</span></div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="card__loc"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg> Jardim Philadélphia</span>
+            <span class="card__ref">TE-4005</span>
+          </div>
+          <h3 class="card__title">Terreno plano em loteamento consolidado</h3>
+          <div class="card__price">R$ 380.000</div>
+          <div class="card__specs">
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-area"/></svg> 450 m²</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-home"/></svg> 15 m de frente</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-doc"/></svg> Escriturado</span>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--outline btn--sm" type="button" data-detail
+              data-ref="TE-4005" data-img="fotos/te-4005.jpg" data-title="Terreno plano em loteamento consolidado"
+              data-loc="Jardim Philadélphia" data-price="R$ 380.000" data-type="Terreno"
+              data-specs="450 m² totais|15 m de frente|Plano e regular|Escritura registrada"
+              data-desc="Lote plano e pronto para construir, em rua asfaltada com toda a infraestrutura instalada (água, esgoto, energia e iluminação pública). Região em valorização, com vizinhança já consolidada. Sem ônus, sem dívidas e com escritura registrada em cartório.">
+              Ver Detalhes
+            </button>
+            <a class="btn btn--wa btn--sm" href="https://wa.me/5535999999999" data-wa
+               data-wa-msg="Olá! Tenho interesse no imóvel REF TE-4005 — Terreno no Jardim Philadélphia (R$ 380.000). Pode me enviar mais informações?">
+              <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tenho Interesse
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 6 -->
+      <article class="card reveal">
+        <div class="card__media">
+          <img class="photo" src="fotos/cc-5023.jpg" width="900" height="620" loading="lazy" decoding="async" alt="Casas geminadas em condomínio fechado, com garagens e calçadas novas">
+          <span class="card__tag card__tag--gold">Exclusivo</span>
+          <span class="card__type">Condomínio fechado</span>
+          <div class="card__scrim"><span><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> Ver detalhes</span></div>
+        </div>
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="card__loc"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg> Santa Ângela</span>
+            <span class="card__ref">CC-5023</span>
+          </div>
+          <h3 class="card__title">Casa em condomínio fechado com segurança 24h</h3>
+          <div class="card__price">R$ 1.180.000</div>
+          <div class="card__specs">
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bed"/></svg> 3 suítes</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-bath"/></svg> 4 banheiros</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-area"/></svg> 240 m²</span>
+            <span class="spec"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#i-car"/></svg> 2 vagas</span>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--outline btn--sm" type="button" data-detail
+              data-ref="CC-5023" data-img="fotos/cc-5023.jpg" data-title="Casa em condomínio fechado com segurança 24h"
+              data-loc="Santa Ângela" data-price="R$ 1.180.000" data-type="Casa em condomínio"
+              data-specs="3 suítes|4 banheiros|240 m² construídos|2 vagas cobertas"
+              data-desc="Sobrado moderno em condomínio fechado com portaria 24h, quadra, playground e área de lazer completa. Living amplo com pé-direito alto, cozinha integrada e varanda com churrasqueira. Ideal para famílias que priorizam segurança e convivência.">
+              Ver Detalhes
+            </button>
+            <a class="btn btn--wa btn--sm" href="https://wa.me/5535999999999" data-wa
+               data-wa-msg="Olá! Tenho interesse no imóvel REF CC-5023 — Casa em condomínio em Santa Ângela (R$ 1.180.000). Podemos agendar uma visita?">
+              <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tenho Interesse
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="listings__foot reveal">
+      <p>Não encontrou o que procurava? Temos imóveis que ainda não foram anunciados publicamente.</p>
+      <a class="btn btn--wa" href="https://wa.me/5535999999999" data-wa
+         data-wa-msg="Olá! Não encontrei exatamente o que procuro no site. Posso descrever o que preciso para vocês buscarem?">
+        <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Contar o que estou procurando
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ DIFFERENTIATORS ══════════════ -->
+<section class="section section--paper" id="diferenciais">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <span class="eyebrow" data-n="02">Por que a Aurum</span>
+      <h2>Comprar imóvel é decisão de anos. Merece mais do que um anúncio.</h2>
+      <p>Uma negociação mal conduzida custa caro — em dinheiro, em tempo e em dor de cabeça no cartório. Nosso trabalho é eliminar esse risco.</p>
+    </div>
+
+    <div class="feats">
+      <div class="feat reveal">
+        <div class="feat__ico"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-badge"/></svg></div>
+        <h3>Corretores certificados</h3>
+        <p>Equipe registrada no CRECI, com formação contínua em avaliação de imóveis e negociação. Nada de intermediários informais.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__ico"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-chat"/></svg></div>
+        <h3>Atendimento personalizado</h3>
+        <p>Um corretor responsável do início ao fim. Você não repete sua história a cada ligação nem recebe imóveis fora do seu perfil.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__ico"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-scale"/></svg></div>
+        <h3>Assessoria jurídica completa</h3>
+        <p>Análise de matrícula, certidões e contratos por advogado parceiro. Você só assina quando estiver tudo verificado.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__ico"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-pin"/></svg></div>
+        <h3>Conhecimento local real</h3>
+        <p>Sabemos qual rua alaga, qual bairro está valorizando e quanto o vizinho vendeu. Informação que não aparece em portal de anúncios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROCESS ══════════════ -->
+<section class="section section--dark grain" id="processo">
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="head head--center reveal">
+      <span class="eyebrow" data-n="03">Como funciona</span>
+      <h2>Quatro etapas, sem surpresas no meio do caminho</h2>
+      <p>Do primeiro "oi" no WhatsApp até a entrega das chaves, você sempre sabe qual é o próximo passo.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__num"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-chat"/></svg><span class="step__k">1</span></div>
+        <h3>Contato</h3>
+        <p>Você conta o que procura e qual é o seu orçamento. Selecionamos apenas os imóveis compatíveis.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-home"/></svg><span class="step__k">2</span></div>
+        <h3>Visita</h3>
+        <p>Agendamos as visitas no seu horário, com o corretor responsável acompanhando e respondendo tudo na hora.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-doc"/></svg><span class="step__k">3</span></div>
+        <h3>Proposta</h3>
+        <p>Negociamos o valor em seu nome, organizamos a documentação e cuidamos do financiamento junto ao banco.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num"><svg fill="none" stroke="currentColor" aria-hidden="true"><use href="#i-key"/></svg><span class="step__k">4</span></div>
+        <h3>Chaves na mão</h3>
+        <p>Assinatura conferida por advogado, registro em cartório e entrega das chaves. Simples assim.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:58px" class="reveal">
+      <a class="btn btn--gold" href="https://wa.me/5535999999999" data-wa
+         data-wa-msg="Olá! Quero começar o processo de compra. Podem me explicar as etapas?">
+        Começar pela etapa 1 <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section class="section" id="depoimentos">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <span class="eyebrow" data-n="04">Quem já passou por aqui</span>
+      <h2>Histórias de quem comprou e de quem vendeu</h2>
+      <p>Depoimentos de clientes atendidos pela nossa equipe nos últimos anos.</p>
+    </div>
+
+    <div class="quotes">
+      <div class="quote reveal">
+        <div class="stars" aria-label="Avaliação 5 de 5 estrelas">
+          <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+        </div>
+        <p class="quote__txt">Era meu primeiro apartamento e eu não entendia nada de financiamento. A Aurum montou toda a simulação, conversou com o banco por mim e explicou cada documento com paciência. Em 45 dias eu estava com a chave na mão, sem nenhuma surpresa no valor final.</p>
+        <div class="quote__who">
+          <img class="avatar" src="fotos/cliente-1.jpg" width="52" height="52" loading="lazy" decoding="async" alt="Retrato de Mariana Rezende">
+          <div><b>Mariana Rezende</b><span>Compradora · Vila Togni</span></div>
+        </div>
+      </div>
+
+      <div class="quote reveal">
+        <div class="stars" aria-label="Avaliação 5 de 5 estrelas">
+          <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+        </div>
+        <p class="quote__txt">Minha casa ficou oito meses anunciada com outra imobiliária, sem uma proposta sequer. A Aurum refez as fotos, ajustou o preço com base em dados reais da região e vendeu em cinco semanas. A diferença é o profissionalismo — eles trabalham o imóvel, não só anunciam.</p>
+        <div class="quote__who">
+          <img class="avatar" src="fotos/cliente-2.jpg" width="52" height="52" loading="lazy" decoding="async" alt="Retrato de Carlos Eduardo Prado">
+          <div><b>Carlos Eduardo Prado</b><span>Vendedor · Country Club</span></div>
+        </div>
+      </div>
+
+      <div class="quote reveal">
+        <div class="stars" aria-label="Avaliação 5 de 5 estrelas">
+          <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+        </div>
+        <p class="quote__txt">Compramos um imóvel para investimento e o que mais nos deu segurança foi a análise da matrícula. O advogado deles encontrou uma pendência que teria nos dado um prejuízo enorme, e a negociação foi refeita antes da assinatura. Já indicamos para dois amigos.</p>
+        <div class="quote__who">
+          <img class="avatar" src="fotos/cliente-3.jpg" width="52" height="52" loading="lazy" decoding="async" alt="Retrato de Juliana Amaral">
+          <div><b>Juliana e Ricardo Amaral</b><span>Investidores · Centro</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SELL / RENT CTA ══════════════ -->
+<section class="section section--paper" id="vender">
+  <div class="wrap">
+    <div class="sell reveal grain">
+      <div class="sell__txt">
+        <span class="eyebrow" data-n="05">Para proprietários</span>
+        <h2>Quer vender ou alugar seu imóvel?</h2>
+        <p>Imóvel anunciado pelo preço errado encalha e desvaloriza. Fazemos uma avaliação gratuita e sem compromisso, baseada em vendas reais da sua região nos últimos 12 meses.</p>
+        <ul class="sell__list">
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg> Avaliação de mercado gratuita, com relatório por escrito</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg> Fotos profissionais e tour virtual por nossa conta</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg> Divulgação nos principais portais e na nossa base de compradores</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg> Triagem de interessados: você só recebe visitas qualificadas</li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg> Comissão cobrada só na conclusão da venda</li>
+        </ul>
+        <div class="sell__actions">
+          <a class="btn btn--wa" href="https://wa.me/5535999999999" data-wa
+             data-wa-msg="Olá! Quero uma avaliação gratuita do meu imóvel. Tenho um imóvel para vender.">
+            <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Quero avaliar meu imóvel
+          </a>
+          <a class="btn btn--ghost" href="https://wa.me/5535999999999" data-wa
+             data-wa-msg="Olá! Tenho um imóvel que gostaria de colocar para locação. Como funciona a administração?">
+            Colocar para alugar
+          </a>
+        </div>
+      </div>
+      <div class="sell__panel">
+        <img class="photo" src="fotos/vender.jpg" width="800" height="760" loading="lazy" decoding="async" alt="Casa branca moderna com jardim e entrada em pedra">
+        <div class="sell__stamp">
+          <b>R$ 0</b>
+          <span>Sem custo e sem compromisso para avaliar. Você decide depois.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ COVERAGE / MAP ══════════════ -->
+<section class="section" id="regioes">
+  <div class="wrap">
+    <div class="areas">
+      <div class="reveal">
+        <span class="eyebrow" data-n="06">Onde atuamos</span>
+        <h2>Conhecemos cada região como quem mora nela</h2>
+        <p>Atendemos Poços de Caldas e cidades vizinhas do Sul de Minas. Se o seu imóvel está em uma dessas regiões — ou se você procura por uma delas — podemos ajudar hoje mesmo.</p>
+
+        <div class="pills">
+          <!-- [EDIT] neighborhoods -->
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Centro</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Jardim dos Estados</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Country Club</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Vila Togni</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Jardim Philadélphia</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Santa Ângela</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Jardim Kennedy</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> São Bento</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Jardim Bandeirantes</span>
+          <span class="pill"><svg fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><use href="#i-pin"/></svg> Vila Cruz</span>
+        </div>
+
+        <a class="btn btn--wa" href="https://wa.me/5535999999999" data-wa
+           data-wa-msg="Olá! Gostaria de saber se vocês atendem a minha região.">
+          <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Consultar minha região
+        </a>
+      </div>
+
+      <div class="map reveal">
+        <!--
+          [EDIT] For a real map, replace the illustrated map below with a Google Maps embed:
+          <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%"
+                  style="border:0;position:absolute;inset:0" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" title="Localização da Aurum Imobiliária"></iframe>
+        -->
+        <svg viewBox="0 0 400 300" role="img" aria-label="Mapa ilustrativo das regiões atendidas">
+          <rect width="400" height="300" fill="#EAEEF3"/>
+          <g fill="#DBE2EA">
+            <rect x="18" y="22" width="86" height="62" rx="4"/><rect x="118" y="16" width="104" height="70" rx="4"/>
+            <rect x="238" y="26" width="72" height="58" rx="4"/><rect x="324" y="20" width="60" height="66" rx="4"/>
+            <rect x="14" y="106" width="94" height="76" rx="4"/><rect x="126" y="108" width="88" height="72" rx="4"/>
+            <rect x="232" y="104" width="96" height="80" rx="4"/><rect x="344" y="108" width="44" height="74" rx="4"/>
+            <rect x="20" y="204" width="80" height="68" rx="4"/><rect x="118" y="200" width="112" height="76" rx="4"/>
+            <rect x="248" y="206" width="70" height="66" rx="4"/><rect x="334" y="202" width="54" height="72" rx="4"/>
+          </g>
+          <path d="M0 168c60-6 96 16 140 12s78-34 132-28 84 30 128 22v40c-52 10-88-12-134-8s-72 30-126 26-88-24-140-18z" fill="#C6D9D0" opacity=".85"/>
+          <g stroke="#FFFFFF" stroke-width="7" stroke-linecap="round">
+            <path d="M0 96h400M0 192h400M112 0v300M228 0v300M336 0v300"/>
+          </g>
+          <path d="M0 144c70 20 150-24 220-6s110 34 180 12" stroke="#C9A46B" stroke-width="3.5" stroke-linecap="round" fill="none" opacity=".9"/>
+          <g fill="#0B1420">
+            <circle class="map__pin" cx="112" cy="96" r="9" opacity=".28"/><circle cx="112" cy="96" r="5"/>
+            <circle class="map__pin" cx="228" cy="192" r="9" opacity=".28"/><circle cx="228" cy="192" r="5"/>
+            <circle class="map__pin" cx="336" cy="96" r="9" opacity=".28"/><circle cx="336" cy="96" r="5"/>
+            <circle class="map__pin" cx="112" cy="192" r="9" opacity=".28"/><circle cx="112" cy="192" r="5"/>
+          </g>
+          <g transform="translate(200 116)">
+            <path d="M0 26C0 26 13 12 13 2A13 13 0 1 0-13 2C-13 12 0 26 0 26Z" fill="#C9A46B" stroke="#8A6C3A" stroke-width="1.5"/>
+            <circle cy="1.5" r="4.6" fill="#0B1420"/>
+          </g>
+        </svg>
+        <div class="map__chip">
+          <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pin"/></svg>
+          <!-- [EDIT] address -->
+          Av. Francisco Salles, 1.240 — Centro
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section class="section section--paper" id="faq">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <span class="eyebrow" data-n="07">Dúvidas frequentes</span>
+      <h2>As perguntas que todo cliente faz</h2>
+      <p>E se a sua não estiver aqui, é só chamar no WhatsApp — respondemos sem enrolação.</p>
+    </div>
+
+    <div class="faq reveal">
+      <div class="acc">
+        <button class="acc__q" aria-expanded="false">
+          Consigo financiar o imóvel? Como funciona a aprovação?
+          <span class="acc__ico"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+        </button>
+        <div class="acc__a"><div>
+          <p>Sim. A maior parte dos nossos imóveis é apta a financiamento bancário, e trabalhamos com os principais bancos do país. Antes de qualquer visita, fazemos uma simulação gratuita para você saber exatamente quanto o banco libera, qual será a entrada e o valor aproximado da parcela.</p>
+          <p>Também é possível usar o FGTS na entrada, desde que você atenda aos requisitos. Cuidamos de todo o envio de documentos e acompanhamos a análise até a aprovação do crédito.</p>
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" aria-expanded="false">
+          Quais documentos eu preciso separar para comprar ou vender?
+          <span class="acc__ico"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+        </button>
+        <div class="acc__a"><div>
+          <p><b>Para comprar:</b> RG, CPF, comprovante de residência, comprovante de renda dos últimos três meses e certidão de estado civil. Para financiamento, o banco pode solicitar declaração de imposto de renda e extratos.</p>
+          <p><b>Para vender:</b> matrícula atualizada do imóvel, IPTU do ano vigente, certidão negativa de débitos e, no caso de apartamento, declaração de quitação do condomínio. Nossa equipe monta a lista completa no seu caso específico e ajuda a providenciar o que faltar.</p>
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" aria-expanded="false">
+          Como faço para agendar uma visita a um imóvel?
+          <span class="acc__ico"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+        </button>
+        <div class="acc__a"><div>
+          <p>Basta enviar uma mensagem no WhatsApp informando o código do imóvel (por exemplo, AP-1042). Confirmamos a disponibilidade com o proprietário e agendamos no horário que for melhor para você, incluindo fins de semana.</p>
+          <p>As visitas são sempre acompanhadas pelo corretor responsável pelo imóvel, que conhece o histórico da propriedade e responde suas dúvidas na hora. Não há custo nem qualquer compromisso de compra.</p>
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" aria-expanded="false">
+          Quem paga a comissão da imobiliária?
+          <span class="acc__ico"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+        </button>
+        <div class="acc__a"><div>
+          <p>A comissão é paga pelo proprietário do imóvel, no momento da conclusão da venda — e já está considerada no valor anunciado. Ou seja, para quem compra não há nenhum custo adicional de corretagem.</p>
+          <p>O percentual segue a tabela do CRECI-MG e é definido em contrato, por escrito, antes do início da divulgação. Sem taxa de cadastro, sem mensalidade e sem cobrança antecipada.</p>
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" aria-expanded="false">
+          A avaliação do meu imóvel é realmente gratuita?
+          <span class="acc__ico"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+        </button>
+        <div class="acc__a"><div>
+          <p>Sim, e sem compromisso. Um corretor visita o imóvel, analisa o estado de conservação, a metragem e a localização, e compara com vendas reais registradas na mesma região nos últimos 12 meses.</p>
+          <p>Você recebe um relatório por escrito com a faixa de preço recomendada e o tempo médio estimado de venda. Se decidir não anunciar conosco, o relatório é seu de qualquer forma.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="faq__foot reveal">
+      <p>Ficou com alguma dúvida que não está na lista?</p>
+      <a class="btn btn--wa" href="https://wa.me/5535999999999" data-wa
+         data-wa-msg="Olá! Tenho uma dúvida sobre compra/venda de imóvel que não achei no site.">
+        <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tirar minha dúvida no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FINAL CTA ══════════════ -->
+<section class="final grain" id="contato">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-n="—" style="justify-content:center">Fale com a gente</span>
+      <h2>O imóvel que você quer pode estar sendo negociado <em>agora</em>.</h2>
+      <p class="final__sub">
+        Nossa carteira muda toda semana e as melhores oportunidades raramente chegam aos portais.
+        Mande uma mensagem, diga o que procura e receba as opções antes de todo mundo.
+      </p>
+      <div class="final__actions">
+        <a class="btn btn--wa btn--lg" href="https://wa.me/5535999999999" data-wa
+           data-wa-msg="Olá! Vim pelo site da Aurum e quero falar com um corretor agora.">
+          <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Chamar no WhatsApp agora
+        </a>
+        <a class="btn btn--ghost btn--lg" href="tel:+5535999999999">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> (35) 99999-9999
+        </a>
+      </div>
+
+      <div class="final__info">
+        <!-- [EDIT] address, hours, e-mail -->
+        <div>
+          <svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pin"/></svg>
+          <span><b>Nosso escritório</b>Av. Francisco Salles, 1.240 — Centro<br>Poços de Caldas / MG · CEP 37701-000</span>
+        </div>
+        <div>
+          <svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-clock"/></svg>
+          <span><b>Horário de atendimento</b>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 13h · WhatsApp todos os dias</span>
+        </div>
+        <div>
+          <svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+          <span><b>E-mail</b>contato@aurumimoveis.com.br</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="#topo" class="logo" style="margin-bottom:20px">
+          <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-home"/></svg></span>
+          <span class="logo__txt">
+            <span class="logo__name">AURUM</span>
+            <span class="logo__sub">Imobiliária</span>
+          </span>
+        </a>
+        <p>Compra, venda, locação e avaliação de imóveis em Poços de Caldas e região. Assessoria completa, do primeiro contato ao registro em cartório.</p>
+        <!-- [EDIT] CRECI -->
+        <span class="footer__creci">CRECI-MG 12.345-J</span>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+          <a href="https://wa.me/5535999999999" data-wa data-wa-msg="Olá! Vim pelo site da Aurum." aria-label="WhatsApp"><svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#imoveis">Imóveis em destaque</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#imoveis">Comprar imóvel</a></li>
+          <li><a href="#vender">Vender imóvel</a></li>
+          <li><a href="#vender">Locação e administração</a></li>
+          <li><a href="#vender">Avaliação gratuita</a></li>
+          <li><a href="#regioes">Regiões atendidas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer__contact">
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-wa"/></svg>
+            <a href="https://wa.me/5535999999999" data-wa data-wa-msg="Olá! Vim pelo site da Aurum e gostaria de mais informações.">(35) 99999-9999</a></li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg>
+            <a href="mailto:contato@aurumimoveis.com.br">contato@aurumimoveis.com.br</a></li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span>Av. Francisco Salles, 1.240 — Centro<br>Poços de Caldas / MG</span></li>
+          <li><svg fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-clock"/></svg>
+            <span>Seg a sex, 9h–18h · Sáb, 9h–13h</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <span>© <span id="year">2026</span> Aurum Imobiliária. Todos os direitos reservados.</span>
+      <span><a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════ FLOATING WHATSAPP ══════════════ -->
+<a class="wa-float" id="waFloat" href="https://wa.me/5535999999999" data-wa
+   data-wa-msg="Olá! Vim pelo site da Aurum e gostaria de falar com um corretor."
+   aria-label="Falar no WhatsApp">
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  <span>Falar no WhatsApp</span>
+</a>
+
+<!-- ══════════════ PROPERTY MODAL ══════════════ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal__box">
+    <div class="modal__media">
+      <!-- src/alt are set by openModal() from the card's data-img -->
+      <img class="photo" id="modalPhoto" alt="">
+      <button class="modal__close" id="modalClose" aria-label="Fechar"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      <span class="card__type" id="modalType"></span>
+    </div>
+    <div class="modal__body">
+      <div class="modal__ref" id="modalRef"></div>
+      <h3 id="modalTitle"></h3>
+      <span class="card__loc"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg> <span id="modalLoc"></span></span>
+      <div class="modal__price" id="modalPrice"></div>
+      <div class="modal__specs" id="modalSpecs"></div>
+      <p id="modalDesc"></p>
+      <a class="btn btn--wa btn--block" id="modalWa" href="https://wa.me/5535999999999">
+        <svg class="icon icon--solid" aria-hidden="true"><use href="#i-wa"/></svg> Tenho interesse neste imóvel
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ─────── CONFIG: change the number here [EDIT] ─────── */
+  var WHATSAPP_NUMBER = '5535999999999';
+  var WA_BASE = 'https://wa.me/' + WHATSAPP_NUMBER;
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function waLink(msg) {
+    return WA_BASE + (msg ? '?text=' + encodeURIComponent(msg) : '');
+  }
+
+  /* Build every WhatsApp link with its prefilled message.
+     Each href already works without JS — this only adds the message. */
+  document.querySelectorAll('a[data-wa]').forEach(function (a) {
+    a.href = waLink(a.dataset.waMsg);
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  /* ─────── Sticky nav, scroll progress, floating button ─────── */
+  var nav = document.getElementById('nav');
+  var progress = document.getElementById('navProgress');
+  var waFloat = document.getElementById('waFloat');
+  var ticking = false;
+
+  function onScroll() {
+    var y = window.pageYOffset;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    nav.classList.toggle('is-stuck', y > 40);
+    waFloat.classList.toggle('is-visible', y > 400);
+    progress.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(onScroll);
+  }, { passive: true });
+  onScroll();
+
+  /* ─────── Scrollspy: highlight the section you're reading ─────── */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav__links a'));
+  var spied = navLinks
+    .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && spied.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        navLinks.forEach(function (a) {
+          a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    spied.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ─────── Mobile drawer ─────── */
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+
+  function setDrawer(open) {
+    drawer.classList.toggle('is-open', open);
+    drawer.setAttribute('aria-hidden', String(!open));
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  burger.addEventListener('click', function () { setDrawer(!drawer.classList.contains('is-open')); });
+  document.getElementById('drawerClose').addEventListener('click', function () { setDrawer(false); });
+  drawer.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { setDrawer(false); });
+  });
+
+  /* ─────── Search bar → WhatsApp with the chosen filters ───────
+     Swap this handler for a real query once a listings backend exists. */
+  var form = document.getElementById('searchForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msg = 'Olá! Estou procurando um imóvel com este perfil:\n'
+      + '• Tipo: ' + form.tipo.value + '\n'
+      + '• Bairro: ' + form.bairro.value + '\n'
+      + '• Faixa de preço: ' + form.preco.value + '\n\n'
+      + 'Quais opções vocês têm disponíveis?';
+    window.open(waLink(msg), '_blank', 'noopener');
+  });
+
+  /* ─────── FAQ accordion (single-open) ─────── */
+  document.querySelectorAll('.acc__q').forEach(function (btn) {
+    var panel = btn.nextElementSibling;
+    btn.addEventListener('click', function () {
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.acc__q[aria-expanded="true"]').forEach(function (other) {
+        if (other === btn) return;
+        other.setAttribute('aria-expanded', 'false');
+        other.nextElementSibling.style.height = '0px';
+      });
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      panel.style.height = isOpen ? '0px' : panel.scrollHeight + 'px';
+    });
+  });
+  window.addEventListener('resize', function () {
+    document.querySelectorAll('.acc__q[aria-expanded="true"]').forEach(function (btn) {
+      btn.nextElementSibling.style.height = btn.nextElementSibling.scrollHeight + 'px';
+    });
+  });
+
+  /* ─────── Property detail modal ─────── */
+  var modal = document.getElementById('modal');
+  var modalWa = document.getElementById('modalWa');
+  var lastFocused = null;
+
+  modalWa.target = '_blank';
+  modalWa.rel = 'noopener';
+
+  function openModal(btn) {
+    var d = btn.dataset;
+    lastFocused = btn;
+    var photo = document.getElementById('modalPhoto');
+    photo.src = d.img;
+    photo.alt = d.title + ' — ' + d.loc;
+    document.getElementById('modalType').textContent = d.type;
+    document.getElementById('modalRef').textContent = 'Código ' + d.ref;
+    document.getElementById('modalTitle').textContent = d.title;
+    document.getElementById('modalLoc').textContent = d.loc;
+    document.getElementById('modalPrice').textContent = d.price;
+    document.getElementById('modalDesc').textContent = d.desc;
+
+    document.getElementById('modalSpecs').innerHTML = d.specs.split('|').map(function (s) {
+      var parts = s.split(' ');
+      return '<div><b>' + parts.shift() + '</b><span>' + parts.join(' ') + '</span></div>';
+    }).join('');
+
+    modalWa.href = waLink('Olá! Tenho interesse no imóvel REF ' + d.ref + ' — ' + d.title
+      + ', ' + d.loc + ' (' + d.price + '). Podemos agendar uma visita?');
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('modalClose').focus();
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-detail]').forEach(function (btn) {
+    btn.addEventListener('click', function () { openModal(btn); });
+  });
+  // the whole card image is clickable too — it shows a "Ver detalhes" scrim on hover
+  document.querySelectorAll('.card').forEach(function (card) {
+    var media = card.querySelector('.card__media');
+    var trigger = card.querySelector('[data-detail]');
+    if (media && trigger) media.addEventListener('click', function () { openModal(trigger); });
+  });
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (modal.classList.contains('is-open')) closeModal();
+    if (drawer.classList.contains('is-open')) setDrawer(false);
+  });
+
+  /* ─────── Scroll reveal ─────── */
+  var revealables = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, i) {
+        if (!entry.isIntersecting) return;
+        entry.target.style.transitionDelay = Math.min(i * 80, 320) + 'ms';
+        entry.target.classList.add('is-in');
+        io.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
+    revealables.forEach(function (el) { io.observe(el); });
+  } else {
+    revealables.forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  /* ─────── Count-up on the stats bar ─────── */
+  var counters = document.querySelectorAll('[data-count]');
+  if ('IntersectionObserver' in window && !reduceMotion && counters.length) {
+    var countObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        countObserver.unobserve(el);
+
+        var target = parseInt(el.dataset.count, 10);
+        var prefix = el.dataset.prefix || '';
+        var suffix = el.dataset.suffix || '';
+        var start = performance.now();
+        var duration = 1400;
+
+        (function tick(now) {
+          var p = Math.min((now - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = prefix + Math.round(target * eased) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        })(start);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (el) { countObserver.observe(el); });
+  }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
